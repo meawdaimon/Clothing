@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html" class="logo"><img src="shirt/images.png" alt=""></a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="con">
+        <h3 class="mt-4">เข้าสู่ระบบ</h3>
+        <form action="shop.html" onsubmit="return validateForm()">                
+            <div class="mb-3">
+                <label for="username">User ID</label>
+                <input type="text" name="username" id="username">
+            </div>
+            <div class="mb-3">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        <hr>
+        <p>ยังเป็นสมาชิกอยู่ใช่ไหม คลิ้กที่นี่เพื่อ <a href="register.html">สมัครสมาชิก</a></p>
+    </div>
+</body>
+<script src="login.js"></script>
+</html>

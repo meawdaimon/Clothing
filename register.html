@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="shirt/images.png" alt="Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>ลงทะเบียน</h2>
+        <form action="login.html" onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="username">ชื่อผู้ใช้</label>
+                <input type="text" id="username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">อีเมล</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">รหัสผ่าน</label>
+                <input type="password" id="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">ยืนยันรหัสผ่าน</label>
+                <input type="password" id="confirm-password" required>
+            </div>
+            <button type="submit">ลงทะเบียน</button>
+        </form>
+        <p>เป็นสมาชิกอยู่แล้ว? <a href="login.html">เข้าสู่ระบบ</a></p>
+    </div>
+    <script src="register.js"></script>
+</body>
+</html>
